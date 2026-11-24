@@ -1,0 +1,11 @@
+tensorflow==2.19.*
+keras==3.15.*
+scikit-learn
+pandas
+matplotlib
+pillow
+fsspec
+aiohttp
+jupytext
+nbconvert
+ipykernel
