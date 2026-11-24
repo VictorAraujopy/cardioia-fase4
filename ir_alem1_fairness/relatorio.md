@@ -40,7 +40,7 @@ Diferenças com intervalo de 95% (bootstrap, 2.000 repetições):
 
 ## Interpretação
 
-A rede dá alarme falso em 37,5% das mulheres saudáveis e em 13,6% dos homens saudáveis. Uma hipótese é que ela tenha aprendido sinais do sexo no raio-X, já que havia mais mulheres na classe doente. O tecido mamário na imagem também pode contribuir. Este trabalho não separa as duas causas.
+A rede dá alarme falso em 37,5% das mulheres saudáveis e em 13,6% dos homens saudáveis. Uma hipótese é que ela tenha aprendido sinais do sexo no raio-X, já que havia mais mulheres na classe doente. O tecido mamário na imagem também pode contribuir. Este trabalho não separa as duas causas. Ao repetir tudo no Colab, com GPU, os números mudaram, mas a diferença se manteve: 40,0% contra 17,0%.
 
 Na prática, mulheres fariam mais exames desnecessários, e homens doentes poderiam passar despercebidos com mais frequência (recall de 0,545), embora essa segunda diferença não seja conclusiva.
 

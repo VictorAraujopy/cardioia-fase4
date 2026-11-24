@@ -38,6 +38,8 @@ dados/processados/
 - Usar o `preprocess_input` da própria rede. **Não** dividir por 255 antes: ele espera pixels de 0 a 255.
 - Não usar espelhamento horizontal no aumento de dados (coloca o coração do lado errado).
 - Avaliar com as mesmas métricas de `parte2_cnn_do_zero/metricas.json` e comparar os dois modelos.
+- **Rodar os dois no mesmo ambiente.** A CNN deu 0,68 de acurácia no Mac e 0,74 no Colab; comparar um modelo de cada lugar
+  seria injusto. Se treinar no Colab, rode lá também o notebook da CNN e use os números dele na comparação.
 
 ### 2. Protótipo (2 pts)
 Notebook interativo ou Flask que recebe a imagem e mostra classe e confiança. Antes de prever,

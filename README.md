@@ -24,6 +24,8 @@ Classifica raios-X de tórax em **cardiomegalia** (coração aumentado) ou **sem
 |---|---|---|---|---|
 | 0,679 | 0,708 | 0,607 | 0,654 | 0,779 |
 
+Números do Mac (CPU). No Colab, com GPU, eles mudam: ver [DECISOES.md](DECISOES.md#o-resultado-varia-com-o-ambiente).
+
 Prints em [parte2_cnn_do_zero/prints](parte2_cnn_do_zero/prints).
 
 ## Estrutura
@@ -52,8 +54,10 @@ cd ir_alem1_fairness && python fairness.py && cd ..
 
 A Parte 1 baixa cerca de 0,9 GB.
 
-**No Colab:** abra o notebook da Parte 1 e rode tudo. Para abrir só o da Parte 2a, envie antes o
-`dados_processados.zip` (release `parte-a`) e rode `!unzip -q dados_processados.zip -d /content`.
+**No Colab:** os arquivos somem ao trocar de sessão.
+- Parte 1: abra o notebook e rode tudo.
+- Parte 2a: antes, envie o `dados_processados.zip` (release `parte-a`) e rode `!unzip -q dados_processados.zip -d /content`.
+- Fairness: precisa também do `previsoes_teste.csv`, gerado pela Parte 2a, em `/content/dados/`.
 
 ## Dados
 

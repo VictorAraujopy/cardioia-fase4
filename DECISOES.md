@@ -35,7 +35,20 @@
 | Adam 0,001, reduzido quando estagna | É o padrão do Keras; a redução refina o fim do treino. |
 | Parada antecipada (12 épocas sem melhora) | Para no ponto certo e volta para a melhor época (24 de 36). |
 | Limiar 0,5 | É o padrão. Ajustá-lo olhando o teste seria trapaça. |
-| Semente 42 | Duas execuções deram exatamente os mesmos números na mesma máquina. |
+| Semente 42 | Na mesma máquina, as execuções deram exatamente os mesmos números. |
+| Keras 3.13 | É a versão do Colab. Um modelo salvo no Keras 3.15 não abre lá. |
+
+### O resultado varia com o ambiente
+
+Os mesmos notebooks, com os mesmos dados, rodados no Colab (GPU T4) em 24/11/2026:
+
+| Ambiente | Acurácia | Precisão | Recall | F1 | AUC | Falso positivo (mulheres / homens) |
+|---|---|---|---|---|---|---|
+| Mac, CPU (publicado) | 0,679 | 0,708 | 0,607 | 0,654 | 0,779 | 37,5% / 13,6% |
+| Colab, GPU | 0,735 | 0,728 | 0,750 | 0,739 | 0,813 | 40,0% / 17,0% |
+
+Publicamos a primeira execução. Trocar pela melhor seria escolher o resultado olhando o teste. Com poucos
+dados, essa variação é esperada, e o viés de sexo apareceu nos dois ambientes.
 
 ## O que não fizemos, de propósito
 
