@@ -1,0 +1,22 @@
+# dados e modelos (grandes demais pro git)
+dados/
+modelos/
+*.zip
+*.keras
+*.h5
+
+# ambiente Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# credenciais
+.env
+.env.*
+kaggle.json
+
+# sistema e IDE
+.DS_Store
+.idea/
+.vscode/
