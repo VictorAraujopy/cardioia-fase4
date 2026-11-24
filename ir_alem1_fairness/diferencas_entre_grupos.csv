@@ -1,0 +1,5 @@
+,diferenca,minimo_95,maximo_95,inclui_zero
+recall: mulheres - homens,0.114,-0.034,0.265,True
+falso positivo: mulheres - homens,0.239,0.103,0.367,False
+recall: 60+ - 18-39,0.036,-0.172,0.239,True
+falso positivo: 60+ - 18-39,0.204,0.0,0.426,True
